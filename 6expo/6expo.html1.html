@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html><!-- Etiquetas Cool y Colgroup --> <!-- col marca una columna especifica --> 
+		<!-- colgroup marca varias columnas -->
+<head>
+	<title>Ejercicio Col</title>
+</head>
+<body>
+<table>
+	<colgroup>
+		<col width="300" span="2" style="background- color: red"
+		aling = "center">
+		<col width="300" style="background-color: yellow" align="lefth">
+	</colgroup>
+
+	<tr>
+		<th>Datos</th>
+		<th>Nombres</th>
+		<th>Apellidos</th>
+	</tr>
+
+	<tr>
+		<th>Celular</th> 
+		<th>Cedula</th>
+		<th>Genero</th>
+	</tr>
+</table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html><!-- Etiqueta comand-->
+<head>
+	<title>Etiqueta Comand</title></head>
+<body>
+	<menu type= "toolbar">
+	<Comand type = "radio" radiogroup ="aligment" checked = "checked" label = "sena" onclick = "setAling ('lafasd')"> <button>Mostrar Mensaje</button>
+	</comand>
+
+	<comand type ="correo"radiogroup ="aligment" checkded ="checked" label ="sena" onclick = "estAling('1020185')"> <button>Mensaje</button>
+	</comand>
+
+</menu>
+	<Script type = "text/javascript">
+	function setAling (texto){
+		alert ("Parametro enviado" + texto);
+}
+</Script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html><!-- sirve para especificar una cuadrìcula de datos -->
+<head><!-- etiqueta datagrip -->
+	<title>Etiqueta datagrip</title>
+</head>
+<body>
+	<ol><!--Lista -->
+		<li>(Nombre)</li><!--estamos llenando la lista -->
+		<li>(Apellido)</li>
+		<li>(Cedula)</li>
+		<ol style="list-style-type: lower-alpha;">
+		<li>(Yurani)</li>
+		<li>(Montanez)</li>
+		<li>(1054121434)</li>
+			
+		</ol>
+		<li>(datagrid)</li>
+	</ol>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head><!-- sirve para autocompletar una pagina-->
+	<title>Etiqueta datalist</title>
+</head>
+<body>
+	<form action="demo_form.asp" method="get">
+
+	<input list="browsers" name="browser">
+	<datalist id="browsers">
+	<option value="Internet Explorer">
+	<option value="Chrome">
+	<option value="Firefox">
+	<option value="Opera">
+	<option value="Adsi">
+	<option value="1020185">
+	</datalist>
+
+	<imput type= "submit">
+</form>
+
+</body>
+</html>
