@@ -1,0 +1,112 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Probando canvas</title>
+
+<script>
+window.onload = function (){
+	//Recibimos el elemento canvas
+	var elemento = document.getElementById('micanvas');
+	//comprobaciòn sobre si encontramos un elemento
+	//y podemos extraer su contexto con getContext(), que indica compatibilidad con canvas
+	if (elemento && elemento.getContext){
+	//accedo al contexto de '2d' de este canvas, necesario para dibujar
+	var contexto = elemento.getContext('2d');
+	if (contexto){
+		//si tengo el contexto 2d es que todo ha ido muy bien y puedo empezar a dibujar en el canvas
+		//comienzo dibujando un rectàngulo
+		contexto.fillRect(0,0,550,100);
+		//cambio el color de estilo de dibujo a rojo
+		contexto.fillStyle = '#cc0000';
+		//dibujando otro rectàngulo
+		contexto.fillRect(10,10,100,70);
+
+	}
+	}
+	}
+</script>
+</head>
+<body>
+
+<canvas id = "micanvas" width="200" height="100">
+	Este texto se muestra para los navegadores no compatibles con canvas.
+	<br>
+	Por favor, utiliza Firefox, Chrome, Safari u Opera.
+</canvas>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<center>
+	<header>
+		<h1> Mi sitio web</h1>
+		<p> Mi sitio web creado en html5 </p>
+	</header>
+
+	<footer>
+		Creado por Yurani
+	</footer>
+	<cite draggable = "true"> el conocimiento es poder </cite>
+</center>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<code>
+	<pre>
+	&lbbody&br
+		public class holamundo{
+			public static main (String args [] ){
+				System.out.printIn ("hola mundo");
+			}
+		}
+	</pre>
+
+
+</code>
+</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<table border="1">
+	<caption>Ingresos Diarios</caption>
+	<tr>
+		<th>Dìa</th>
+		<th>Ingresos</th>
+	</tr>
+
+	<tr>
+		<td>Lunes</td>
+		<td>$100</td>
+	</tr>
+
+	<tr>
+		<td>Martes</td>
+		<td>$120</td>
+	</tr>
+
+	<tr>
+		<td>Miercoles</td>
+		<td>$90</td>
+	</tr>
+</table>
+</body>
+</html>
