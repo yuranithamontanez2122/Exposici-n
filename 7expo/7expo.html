@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Template</title>
+</head>
+<body>
+
+<table border="1" id="producttable">
+  <thead>
+    <tr>
+      <td>UPC_Code</td>
+      <td>Product_Name</td>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- existing data could optionally be included here -->
+  </tbody>
+</table>
+
+<template id="productrow">
+  <tr>
+    <td class="record"></td>
+    <td></td>
+  </tr>
+</template>
+</body>
+</html>
+
+<script type="text/javascript">
+// Test to see if the browser supports the HTML template element by checking
+// for the presence of the template element's content attribute.
+if ('content' in document.createElement('template')) {
+
+  // Instantiate the table with the existing HTML tbody and the row with the template
+  var t = document.querySelector('#productrow'),
+  td = t.content.querySelectorAll("td");
+  td[0].textContent = "1235646565";
+  td[1].textContent = "Stuff";
+
+  // Clone the new row and insert it into the table
+  var tb = document.getElementsByTagName("tbody");
+  var clone = document.importNode(t.content, true);
+  tb[0].appendChild(clone);
+  
+  // Create a new row
+  td[0].textContent = "0384928528";
+  td[1].textContent = "Acme Kidney Beans";
+
+  // Clone the new row and insert it into the table
+  var clone2 = document.importNode(t.content, true);
+  tb[0].appendChild(clone2);
+
+} else {
+  // Find another way to add the rows to the table because 
+  // the HTML template element is not supported.
+}
+
+</script>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Etiqueta dd</title>
+</head>
+<body>
+	<dl>
+
+		<dt>Cofee</dt>
+		<dd>Beber tinto Caliente</dd>
+		<dt>Leche</dt>
+		<dd>Beber Leche Fria</dd>
+		</dl>
+
+		<!-- Etiqueta del -->
+
+		<p>Hola Mundo <del>blue</del><ins>red</ins></p> 
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etiqueta details</title>
+</head>
+<body>
+	<details>
+		<summary> nacio en 1997 - 2016.</summary>
+		<p>Nacio en Boyaca-Colombia</p>
+	</details>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Etiqueta dialog</title>
+<style>
+	<table, th,td{
+		border: 1px solid black;
+	}
+
+
+
+</style>
+</head>
+<body>
+  <p><b>Note: </b> La etiqueta dialog solo soporta chrome opera </p>
+<table>
+	<tr>
+	<th>Julio <dialog open> esta es una ventana de dialogo abierto </dialog></th>
+	<th>Agosto</th>
+	<th>Septiembre</th>
+	</tr>
+	<tr>
+		<td>31</td>
+		<td>24</td>
+		<td>05</td>
+	</tr>
+</table>
+</body>
+</html>
