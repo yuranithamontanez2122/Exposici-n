@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+
+<!--La etiqueta ruby sirve para marcar anotaciones ruby en lenguajes ideogramáticos (como el chino o el japonés) que sirven como guía para la pronunciación.
+El texto que va a ser objeto de anotación va dentro de la etiqueta ruby, acompañado de las anotaciones marcadas con la etiqueta rt. También se puede añadir la etiqueta rp para marcar los paréntesis alrededor de la anotación (para los navegadores que no soportan estas etiquetas; los que la soportan no muestran el contenido de rp).Sus atributos son globales-->
+
+<title> Ruby </title> 
+
+<body>
+<!--Las letras en japones y chino no apareceran en el navegador solo en este programa.--> 
+<h1>
+<ruby> 私 = Yo en japones <rt> わたし = Privado en chino </rt></ruby>
+<br>
+<br>
+<br>
+<ruby> 名前 = Nombre en japones <rt> なまえ = Nombre en chino</rt>
+</ruby>
+</h1>
+
+</body> 
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<!--se utiliza para html4 es para que las palabras queden tachadas. SUS ATRIBUTOS SON GLOBALES. 
+Funciona en todos los navegadores-->
+
+	<p>la palabra tachada va a ser <s> july </s> con la etiqueta s.</p>
+		
+	<p>las palabras tachadas van a ser <s>ESTE TEMA ES ENTENDIBLE </s></p>
+
+</body>
+</html>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<title>Ejemplo de spam</title>
+
+</head>
+
+<body>
+
+<p> El resultado que se obtiene es el siguiente:</p>
+
+<!--esta etiqueta es para la salida de un mensaje: SUS ATRIBUTOS SON GLOBALES. Es de html5-->
+<samp> Hola Jovenes C&oacute;mo est&aacute;n?</samp></br>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--xml: espacio preservado No soportado en HTML5. Especifica si los espacios en blanco en el código deben ser preservados-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>Etiqueta Script</title>
+ 
+
+        <!--async: Especifica que el script se ejecuta de forma asíncrona. Nota: El atributo async de la etiqueta de script no es compatible con Internet Explorer 9 y versiones anteriores.-->
+        <script src="demo_async.js" async></script>
+
+        <!--Type: Especifica el tipo de medio del guión-->
+        <script type="text/javascript">
+          alert("Hola Mundo!");
+        </script>
+
+
+<p>Esta p&aacute;gina contiene varios script y con sus atributos respectivos</p>
+<p   id = "demo"> La letra va a ser  de color verde y de tama&ntilde;o 60px en la segunda l&iacute;nea</p>
+<p id="demo2"> Al dar click en el boton cambia de color y tama&ntilde;o. </p>
+
+
+<!--crear un boton que al darle click cambiar la apariencia de la letra-->
+<button onclick = "myFunction()"> Click </button>
+
+</head>
+ 
+<body>
+
+        <!--defer: Especifica que el script se ejecuta cuando la página ha terminado de analizar (sólo para los scripts externos)-->
+        <script src="demo_defer.js" defer></script> 
+
+
+        <!--charset: Especifica la codificación de caracteres utilizado en un archivo de script externo-->
+        <script charset="UTF-8" src="demo_script_charset.js"></script>
+        <br>
+        <p>Estas dos l&iacute;neas tienen el atributo charset. Los caracteres griegos se muestran correctamente, ya que son parte del conjunto de caracteres "UTF-8".</p>
+        <p>Intente cambiar los juegos de caracteres de "ISO-8859-1" (por defecto), "windows-1252" o "UTF-16".</p>
+
+
+<script >
+
+
+
+    function myFunction() {
+
+    <!--variable var-->
+    var x = document.getElementById("demo");
+
+    x.style.fontSize = "40px"; 
+    x.style.color = "pink"; 
+
+
+    var y = document.getElementById("demo2");
+
+    y.style.fontSize = "60px"; 
+    y.style.color = "green"; 
+    
+    }
+    
+</script>
+</body>
+</html>
+
+
+<!DOCTYPE HTML >
+
+    <html>
+      <head>
+           <title> SECTION </title>
+      </head>
+
+      <body>
+      <!--Agrupa contenidos que comparten el mismo tema. Y separa un titulo de un parrafo: SUS ATRIBUTOS SON GLOBALES.-->
+
+
+      
+      <section>
+      
+        <center>
+        <h1> AUTOESTIMA </h1>
+        </br>
+        <p>La Autoestima es la valoraci&oacute;n que tenemos de nosotros mismos,
+            es decir cuanto apreciamos nuestra forma de vivir
+            y si es necesario cambiarla para mejora y no ser un mediocre.</br>
+            La Autoestima de una persona muchas veces depende de la educaci&oacute;n
+            y/o de los que los padres ense&ntilde;en
+            y del cari&ntilde;o y el amor que ellos muestren.</center>
+
+      </section>
+      
+      </body>
+
+</html> 
+
+
